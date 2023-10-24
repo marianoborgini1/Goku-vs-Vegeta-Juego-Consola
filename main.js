@@ -7,6 +7,12 @@ console.log("Vida de Vegeta: 100");
 
 let round = 1
 
+function mostrarVida(){
+console.log("---------VIDA RESTANTE---------");
+console.log("Vida de Goku: " + (vidaGoku));
+console.log("Vida de Vegeta: " + (vidaVegeta));
+}
+
 while(vidaGoku > 0 && vidaVegeta > 0){
 
 console.log("--------ROUND " + round + "--------");
@@ -31,11 +37,9 @@ if(golpeGoku > 59){
     console.log("VEGETA ESTA MUY CANSADO");
 }
 
-console.log("---------VIDA RESTANTE---------");
 vidaGoku -= golpeVegeta;
 vidaVegeta -= golpeGoku;
-console.log("Vida de Goku: " + (vidaGoku));
-console.log("Vida de Vegeta: " + (vidaVegeta));
+mostrarVida();
 
 round = round + 1
 
